@@ -16,5 +16,14 @@ export default defineNuxtConfig({
     '@nuxt/test-utils',
     '@nuxt/ui',
     '@nuxt/content'
-  ]
+  ],
+
+    content: {
+        sources: {
+            content: {
+                driver: 'fs',
+                base: './content'
+            }
+        }
+    }
 })

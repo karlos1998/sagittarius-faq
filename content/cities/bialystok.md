@@ -1,0 +1,53 @@
+---
+city: Białystok
+slug: bialystok
+department: Wydział Postępowań Administracyjnych Komendy Wojewódzkiej Policji w Białymstoku
+payment:
+  account_holder: Urząd Miejski w Białymstoku, Departament Finansów Miasta
+  bank: BANK PEKAO S.A.
+  account_number: "26 1240 5211 1111 0010 3553 3132"
+  fees:
+    - name: Za wydanie pozwolenia na broń sportową
+      amount: 242
+    - name: Za wydanie pozwolenia na broń sportową do celów kolekcjonerskich
+      amount: 242
+    - name: Za wydanie dopuszczenia do pracy z bronią sportową
+      amount: 10
+  note: Opłaty należy wnosić ODDZIELNIE (mogą być potwierdzenia z elektronicznego przelewu)
+shipping:
+  name: Wydział Postępowań Administracyjnych Komendy Wojewódzkiej Policji w Białymstoku
+  street: ul. Słowackiego 1
+  postal_code: "15-229"
+  city: Białystok
+weapon_limits:
+  sport:
+    default: 4
+    with_competitions: 6
+    description: |
+      Broń sportową o którą składacie to 4 sztuki z wyróżnieniem:
+      - boczny zapłon / centralny zapłon / strzelba / broń do prochu czarnego.
+      
+      Jeśli macie różnorodne starty w zawodach, to możecie wnioskować o więcej sztuk, ale rzadko więcej niż 6.
+      
+      Obowiązuje prosta zasada: macie po jednym starcie w pistolecie i karabinie bocznego zapłonu oraz 
+      po jednym w pistolecie i karabinie centralnym – piszcie 5–6, nie macie – nie piszcie.
+  collector:
+    max: 30
+    description: |
+      Na 30 maksymalnie. Nie zmuszają was do opisywania, ile chcecie i jakiej broni.
+      Wybór należy do was. Maksymalnie WPA daje do 30 sztuk.
+additional_permits:
+  work_permit:
+    required: true
+    fee: 10
+    description: |
+      Składajcie wszyscy. Może się nie przydadzą nigdy, a może – jak najbardziej – będą nieodzowne.
+      To tylko 10 zł i dodatkowe zdjęcie.
+important_notes:
+  - Jeśli wysyłacie to, zawsze ze zwrotnym potwierdzeniem odbioru.
+  - Polecam też po złożeniu wniosku odezwać się do swojego dzielnicowego i ewentualnie zostawić numer telefonu – szybciej załatwicie sprawę.
+  - Naprawdę chłopaki mają sporo roboty, tym bardziej w czasie urlopów.
+  - Obowiązek przechowywania broni macie dopiero po zakupie broni, a nie w trakcie wydawania pozwolenia.
+  - Safa musicie mieć już w momencie posiadania pierwszej sztuki broni, a nie wcześniej.
+  - Jak piszecie oświadczenia – kasujcie to, co jest pogrubioną czcionką!
+---
