@@ -1,10 +1,14 @@
 {
   "city": "Olsztyn",
   "slug": "olsztyn",
-  "department": "Wydział Postępowań Administracyjnych KWP w Olsztynie",
+  "department": "Wydział Postępowań Administracyjnych Komendy Wojewódzkiej Policji w Olsztynie",
   "payment": {
-    "account_holder": "Urząd Miasta Olsztyn",
-    "account_number": "987654321",
+    "account_holder": "Urząd Miasta Olsztyn, Wydział Podatków i Opłat",
+    "bank": "Bank Handlowy w Warszawie S.A.",
+    "account_number": "09 1030 1508 0000 0008 2310 0003",
+    "account_note": "NOWY numer rachunku od 1.02.2023",
+    "payment_location": "W kasie Urzędu Miasta w Olsztynie, pl. Jana Pawła II 1 lub na rachunek bankowy",
+    "note": "3 opłaty - ODDZIELNIE",
     "fees": [
       {
         "name": "Za wydanie pozwolenia na broń sportową",
@@ -18,35 +22,46 @@
         "name": "Za wydanie dopuszczenia do pracy z bronią sportową",
         "amount": 10
       }
-    ]
+    ],
+    "payment_note": "Mogą być potwierdzenia z elektronicznego przelewu"
   },
   "shipping": {
     "name": "Wydział Postępowań Administracyjnych KWP",
-    "street": "ul. Partyzantów 6/8",
-    "postal_code": "10-521",
-    "city": "Olsztyn"
+    "street": "ul. Wincentego Pstrowskiego 3, blok 4",
+    "postal_code": "10-049",
+    "city": "Olsztyn",
+    "phone": "(89) 522 43 00",
+    "email": "wpa@ol.policja.gov.pl",
+    "note": "NOWY ADRES"
+  },
+  "office_hours": {
+    "days": "Wtorek i czwartek",
+    "hours": "10:00 - 16:45"
   },
   "weapon_limits": {
     "sport": {
-      "default": 10,
-      "description": "Standardowy limit dla broni sportowej"
+      "max": 8,
+      "description": "Ilość broni sportowej to do 8 sztuk bez podziału na rodzaje: boczny zapłon, centralny zapłon, strzelba, broń czarnoprochowa."
     },
     "collector": {
-      "recommended": 30,
-      "description": "Zalecany limit dla kolekcjonerów"
+      "max": 30,
+      "description": "Kolekcjonerska do 30 sztuk, także bez podziału."
     }
   },
   "additional_permits": {
     "work_permit": {
       "required": true,
       "fee": 10,
-      "description": "Dopuszczenie do pracy z bronią sportową"
+      "description": "Składajcie wszyscy. Może się nie przydadzą nigdy, a może będą nieodzowne. To tylko 10 zł i dodatkowe zdjęcie."
     }
   },
   "document_submission": [
-    "Składaj dokumenty osobiście lub pocztą poleconą"
+    "Kopie licencji i kopie patentów składajcie wraz z wnioskami.",
+    "Oryginały licencji i patentów wysyłajcie jako pliki elektronicznie mailem z podpisem elektronicznym lub przez profil zaufany.",
+    "Jeśli wysyłacie cokolwiek pocztą zawsze listem poleconym.",
+    "Polecam po złożeniu wniosku odezwać się do swojego dzielnicowego - szybciej załatwicie sprawę."
   ],
   "important_notes": [
-    "Sprawdź godziny otwarcia przed wizytą"
+    "Obowiązek przechowywania broni i posiadania szafy macie dopiero po zakupie pierwszej broni, a nie w trakcie wydawania pozwolenia."
   ]
 }
