@@ -27,10 +27,14 @@
       <div class="container mx-auto px-6">
         <div class="text-center">
           <p class="text-gray-400">
-            2025 Sagittarius FAQ. All rights reserved.
+            <a href="https://www.letscode.it/">
+            2025 Karol Sójka from Let's Code It. All rights reserved.
+            </a>
           </p>
         </div>
       </div>
     </footer>
   </div>
 </template>
+<script setup lang="ts">
+</script>
