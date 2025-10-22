@@ -11,11 +11,7 @@
 
           <!-- Navigation Links -->
           <div class="flex items-center gap-8">
-            <NuxtLink to="/" class="hover:text-gray-300 transition-colors">
-              Home
-            </NuxtLink>
-            <a href="#" class="hover:text-gray-300 transition-colors">About</a>
-            <a href="#" class="hover:text-gray-300 transition-colors">Contact</a>
+            <a href="https://kssagittarius.pl/" class="hover:text-gray-300 transition-colors">Powrót</a>
           </div>
         </div>
       </div>
