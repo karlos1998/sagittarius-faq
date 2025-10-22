@@ -30,7 +30,7 @@ jobs:
           tar -czf ../../site.tar.gz .
           cd ../..
 
-      - name: Clean target directory on server
+      - name: Prepare server directory
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SERVER_HOST }}
@@ -39,23 +39,24 @@ jobs:
           port: 22
           script: |
             # Ensure directory exists
-            mkdir -p /var/www/domains/pomoc.kssagittarius.pl/public
+            mkdir -p /home/fadeusz/containers/pomoc.kssagittarius.pl/public
             
-            # Clean current public directory
-            rm -rf /var/www/domains/pomoc.kssagittarius.pl/public/*
+            # Stop container
+            cd /home/fadeusz/containers/pomoc.kssagittarius.pl
+            docker-compose down || true
 
-      - name: Deploy to server
+      - name: Deploy files to server
         uses: appleboy/scp-action@master
         with:
           host: ${{ secrets.SERVER_HOST }}
           username: ${{ secrets.SERVER_USER }}
           key: ${{ secrets.SERVER_SSH_KEY }}
           port: 22
-          source: "site.tar.gz"
-          target: "/var/www/domains/pomoc.kssagittarius.pl/"
+          source: "site.tar.gz,docker-compose.yml,Caddyfile"
+          target: "/home/fadeusz/containers/pomoc.kssagittarius.pl/"
           overwrite: true
 
-      - name: Extract files and set permissions
+      - name: Extract files and start container
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.SERVER_HOST }}
@@ -63,19 +64,24 @@ jobs:
           key: ${{ secrets.SERVER_SSH_KEY }}
           port: 22
           script: |
-            cd /var/www/domains/pomoc.kssagittarius.pl
+            cd /home/fadeusz/containers/pomoc.kssagittarius.pl
             
-            # Extract archive
+            # Clean public directory
+            rm -rf public/*
+            
+            # Extract new files
             tar -xzf site.tar.gz -C public/
             
             # Remove archive
             rm -f site.tar.gz
             
             # Set proper permissions
-            find public/ -type d -exec chmod 755 {} \;
-            find public/ -type f -exec chmod 644 {} \;
+            chmod -R 755 public/
             
-            # Set ownership (adjust user:group as needed)
-            # chown -R www-data:www-data public/ || true
+            # Start container
+            docker-compose up -d
+            
+            # Clean up old images
+            docker image prune -f
             
             echo "Deployment completed successfully!"

@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  web:
+    image: caddy:2-alpine
+    container_name: sagittarius-faq
+    restart: unless-stopped
+    volumes:
+      - ./public:/usr/share/caddy:ro
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+    environment:
+      - VIRTUAL_HOST=pomoc.kssagittarius.pl
+      - LETSENCRYPT_HOST=pomoc.kssagittarius.pl
+      - LETSENCRYPT_EMAIL=kontakt@kssagittarius.pl
+    networks:
+      - nginx-proxy
+    expose:
+      - "80"
+
+networks:
+  nginx-proxy:
+    external:
+      name: nginx-proxy
