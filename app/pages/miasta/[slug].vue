@@ -7,14 +7,7 @@ const slug = Array.isArray(route.params.slug)
     ? route.params.slug[0]
     : route.params.slug
 
-const {data: city} = await useAsyncData(`city-${slug}`, async () => {
-  const cities = await queryContent<CityData>('cities')
-      .where('slug', '=', slug)
-      .findOne()
-
-  console.log('Found city:', cities)
-  return cities
-})
+const {data: city} = await useFetch<CityData>(`/api/cities/${slug}`)
 
 if (!city.value) {
   throw createError({

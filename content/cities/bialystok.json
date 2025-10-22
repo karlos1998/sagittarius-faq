@@ -1,0 +1,52 @@
+{
+  "city": "Białystok",
+  "slug": "bialystok",
+  "department": "Wydział Postępowań Administracyjnych KWP w Białymstoku",
+  "payment": {
+    "account_holder": "Urząd Miasta Białystok",
+    "account_number": "123456789",
+    "fees": [
+      {
+        "name": "Za wydanie pozwolenia na broń sportową",
+        "amount": 242
+      },
+      {
+        "name": "Za wydanie pozwolenia na broń sportową do celów kolekcjonerskich",
+        "amount": 242
+      },
+      {
+        "name": "Za wydanie dopuszczenia do pracy z bronią sportową",
+        "amount": 10
+      }
+    ]
+  },
+  "shipping": {
+    "name": "Wydział Postępowań Administracyjnych KWP",
+    "street": "ul. Przykładowa 1",
+    "postal_code": "15-000",
+    "city": "Białystok"
+  },
+  "weapon_limits": {
+    "sport": {
+      "default": 10,
+      "description": "Standardowy limit dla broni sportowej"
+    },
+    "collector": {
+      "recommended": 30,
+      "description": "Zalecany limit dla kolekcjonerów"
+    }
+  },
+  "additional_permits": {
+    "work_permit": {
+      "required": true,
+      "fee": 10,
+      "description": "Dopuszczenie do pracy z bronią sportową"
+    }
+  },
+  "document_submission": [
+    "Składaj dokumenty osobiście lub pocztą poleconą"
+  ],
+  "important_notes": [
+    "Kontakt z dzielnicowym może przyspieszyć sprawę"
+  ]
+}

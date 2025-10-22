@@ -1,0 +1,52 @@
+{
+  "city": "Radom",
+  "slug": "radom",
+  "department": "Wydział Postępowań Administracyjnych KWP w Radomiu",
+  "payment": {
+    "account_holder": "Urząd Miasta Radom",
+    "account_number": "111222333",
+    "fees": [
+      {
+        "name": "Za wydanie pozwolenia na broń sportową",
+        "amount": 242
+      },
+      {
+        "name": "Za wydanie pozwolenia na broń sportową do celów kolekcjonerskich",
+        "amount": 242
+      },
+      {
+        "name": "Za wydanie dopuszczenia do pracy z bronią sportową",
+        "amount": 10
+      }
+    ]
+  },
+  "shipping": {
+    "name": "Wydział Postępowań Administracyjnych KWP",
+    "street": "ul. Kościuszki 5",
+    "postal_code": "26-600",
+    "city": "Radom"
+  },
+  "weapon_limits": {
+    "sport": {
+      "default": 10,
+      "description": "Standardowy limit dla broni sportowej"
+    },
+    "collector": {
+      "recommended": 30,
+      "description": "Zalecany limit dla kolekcjonerów"
+    }
+  },
+  "additional_permits": {
+    "work_permit": {
+      "required": true,
+      "fee": 10,
+      "description": "Dopuszczenie do pracy z bronią sportową"
+    }
+  },
+  "document_submission": [
+    "Składaj dokumenty osobiście lub pocztą poleconą"
+  ],
+  "important_notes": [
+    "Pamiętaj o kompletnej dokumentacji"
+  ]
+}

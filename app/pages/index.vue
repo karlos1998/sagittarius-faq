@@ -1,43 +1,9 @@
 <script setup lang="ts">
 import type {CityData} from '~/types/city'
 
-// Try direct fetch first to debug
-const {data: cities, error} = await useAsyncData('cities', async () => {
-  try {
-    // Use $fetch to call the content API directly
-    const result = await $fetch<CityData[]>('/api/_content/query', {
-      method: 'POST',
-      body: {
-        first: false,
-        where: [
-          {
-            _path: {
-              $contains: '/cities'
-            }
-          }
-        ]
-      }
-    })
+// Fetch cities from API endpoint
+const {data: cities} = await useFetch<CityData[]>('/api/cities')
 
-    console.log('Direct API result:', result)
-    return result
-  } catch (e) {
-    console.error('Query error:', e)
-
-    // Fallback to queryContent
-    try {
-      const fallbackResult = await queryContent<CityData>('/cities').find()
-      console.log('Fallback result:', fallbackResult)
-      return fallbackResult
-    } catch (fallbackError) {
-      console.error('Fallback error:', fallbackError)
-      return []
-    }
-  }
-})
-
-console.log('Cities value:', cities.value)
-console.log('Error:', error.value)
 </script>
 
 <template>
@@ -74,8 +40,6 @@ console.log('Error:', error.value)
 
           <div v-else class="text-center py-12">
             <p class="text-gray-600">Brak dostępnych miast</p>
-            <pre v-if="error" class="text-red-600 mt-2 text-left">{{ error }}</pre>
-            <pre class="text-gray-500 mt-2 text-sm text-left">Cities: {{ cities }}</pre>
           </div>
         </div>
       </div>
