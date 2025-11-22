@@ -6,6 +6,10 @@ const {data: cities} = await useFetch<CityData[]>('/api/cities')
 
 // Active section state
 const activeSection = ref<'komenda' | 'pzss'>('komenda')
+
+const handleSectionChange = (section: 'komenda' | 'pzss') => {
+  activeSection.value = section
+}
 </script>
 
 <template>
@@ -30,7 +34,7 @@ const activeSection = ref<'komenda' | 'pzss'>('komenda')
         <div class="max-w-4xl mx-auto">
           <div class="flex gap-4 mb-8">
             <button
-                @click="activeSection = 'komenda'"
+                @click="handleSectionChange('komenda')"
                 :class="[
                   'flex-1 py-4 px-6 rounded-lg font-semibold text-center transition-colors',
                   activeSection === 'komenda'
@@ -42,7 +46,7 @@ const activeSection = ref<'komenda' | 'pzss'>('komenda')
               <div class="text-sm opacity-80">Składanie wniosków o pozwolenia na broń</div>
             </button>
             <button
-                @click="activeSection = 'pzss'"
+                @click="handleSectionChange('pzss')"
                 :class="[
                   'flex-1 py-4 px-6 rounded-lg font-semibold text-center transition-colors',
                   activeSection === 'pzss'
