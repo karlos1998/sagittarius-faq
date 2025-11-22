@@ -38,10 +38,12 @@
               </div>
               <div class="flex-grow">
                 <h3 class="text-lg font-bold text-gray-900 mb-2">Znajdź sekcję wniosków</h3>
-                <p class="text-gray-700">
+                <p class="text-gray-700 mb-4">
                   W portalu przejdź do kategorii "Wnioski" lub "Licencje i Patenty". W systemie SOZ znajdź menu
                   "Wnioski".
                 </p>
+                <img src="/images/pzss/step-2.png" alt="Sekcja wniosków"
+                     class="rounded-lg shadow-md border border-gray-200 max-w-full h-auto">
               </div>
             </div>
 
@@ -53,14 +55,18 @@
               </div>
               <div class="flex-grow">
                 <h3 class="text-lg font-bold text-gray-900 mb-2">Złóż wniosek</h3>
-                <p class="text-gray-700 mb-2">
+                <p class="text-gray-700 mb-4">
                   Wybierz "Złóż wniosek" i zaznacz odpowiedni typ wniosku (np. o nadanie lub przedłużenie licencji
                   zawodniczej).
                 </p>
-                <p class="text-sm text-gray-600">
+                <img src="/images/pzss/step-3a.png" alt="Złóż wniosek"
+                     class="rounded-lg shadow-md border border-gray-200 max-w-full h-auto mb-4">
+                <p class="text-sm text-gray-600 mb-4">
                   W przypadku pierwszej licencji możesz ją uzyskać, przechodząc do "Licencje i Patenty" i zaznaczając
                   "uzyskaj nową licencję".
                 </p>
+                <img src="/images/pzss/step-3b.png" alt="Rodzaj wniosku"
+                     class="rounded-lg shadow-md border border-gray-200 max-w-full h-auto">
               </div>
             </div>
 
