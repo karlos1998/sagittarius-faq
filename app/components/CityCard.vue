@@ -44,10 +44,10 @@ defineProps<Props>()
 
     <!-- Footer -->
     <div class="flex items-center justify-between mt-4 pt-4 border-t border-gray-200">
-      <div class="text-sm text-gray-600">
-        <span class="font-medium text-gray-900">Opłaty:</span>
-        {{ city.payment.fees.reduce((sum, fee) => sum + fee.amount, 0) }} zł
-      </div>
+<!--      <div class="text-sm text-gray-600">-->
+<!--        <span class="font-medium text-gray-900">Opłaty:</span>-->
+<!--        {{ city.payment.fees.reduce((sum, fee) => sum + fee.amount, 0) }} zł-->
+<!--      </div>-->
       <div class="flex items-center text-sm font-medium text-blue-600">
         Szczegóły
         <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
