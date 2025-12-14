@@ -32,7 +32,44 @@
                 Jak uzyskać pozwolenie na broń – instrukcja krok po kroku
               </button>
             </NuxtLink>
-            <span class="text-blue-700 text-base font-medium">Rozpocznij ścieżkę członkowską z klubem Sagittarius</span>
+            <span
+                class="text-blue-700 text-base font-medium mb-6">Rozpocznij ścieżkę członkowską z klubem Sagittarius</span>
+            <div class="mt-2">
+              <button
+                  class="inline-flex items-center gap-3 text-lg md:text-xl bg-green-500 hover:bg-green-600 transition-colors shadow-xl text-white font-semibold py-4 px-8 rounded-2xl mb-2 animate-bounce-slight"
+                  @click="openQuiz"
+                  style="box-shadow:0 0 0 5px #bbf7d0; border: 2px solid #22c55e">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 mr-2" fill="none" viewBox="0 0 24 24"
+                     stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M8 17l4 4 4-4m-4-5v9"/>
+                </svg>
+                Sprawdź się w testach egzaminacyjnych!
+              </button>
+            </div>
+            <!-- S1 Safe Info Box -->
+            <div
+                class="my-8 p-5 rounded-xl bg-yellow-50 border-l-4 border-yellow-500 flex items-center gap-4 shadow w-full max-w-xl">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-10 w-10 text-yellow-500 flex-shrink-0" fill="none"
+                   viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M13 16h-1v-4h-1m1-4h.01M12 20h.01M17.657 16.657a8 8 0 11-11.314 0 8 8 0 0111.314 0z"/>
+              </svg>
+              <div>
+                <div class="text-lg font-semibold text-yellow-800 mb-1">Właśnie zrobiłeś pozwolenie na broń?</div>
+                <div class="text-yellow-900 mb-1">W pierwszej kolejności musisz kupić atestowaną szafę klasy <b>S1</b>
+                  na broń!
+                </div>
+                <a
+                    href="https://militariaforty.pl/kategoria-produktu/szafy/"
+                    target="_blank"
+                    rel="noopener"
+                    class="inline-block mt-2 px-4 py-2 rounded bg-yellow-500 hover:bg-yellow-600 text-white font-bold transition"
+                >
+                  Sprawdź polecane szafy S1
+                </a>
+              </div>
+            </div>
           </div>
         </div>
         <!-- Illustrative Onboarding SVG/graphic -->
@@ -53,3 +90,24 @@
     </div>
   </section>
 </template>
+
+<script setup lang="ts">
+// Delikatniejsza animacja bounce
+import {onMounted} from 'vue'
+
+onMounted(() => {
+  const style = document.createElement('style')
+  style.innerHTML = `.animate-bounce-slight { animation: bounce-slight 1.3s infinite; }
+@keyframes bounce-slight {
+  0%, 100% { transform: translateY(0); }
+  15% { transform: translateY(-12px); }
+  30% { transform: translateY(0); }
+  55% { transform: translateY(-4px); }
+  70% { transform: translateY(0); }
+}`
+  document.head.appendChild(style)
+})
+const openQuiz = () => {
+  window.open('https://egzaminy.kssagittarius.pl/', '_blank')
+}
+</script>
