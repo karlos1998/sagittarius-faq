@@ -131,6 +131,16 @@
                   <a class="text-indigo-700 underline font-semibold" href="/rozporzadzenie-o-przechowywaniu.pdf"
                      target="_blank">Rozporządzenie o przechowywaniu broni (PDF)</a>
                 </li>
+                <li class="flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-600" viewBox="0 0 24 24" fill="none"
+                       stroke="currentColor">
+                    <circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/>
+                    <path stroke="#22c55e" stroke-width="2" stroke-linecap="round" d="M8 12l2 2 4-4"/>
+                  </svg>
+                  <NuxtLink to="/zasady-bezpieczenstwa" class="text-indigo-700 underline font-semibold">Ogólne zasady
+                    bezpieczeństwa w sporcie strzeleckim
+                  </NuxtLink>
+                </li>
                 <li>Ćwicz pytania egzaminacyjne: <a class="text-indigo-700 underline font-semibold"
                                                     href="https://egzaminy.kssagittarius.pl/" target="_blank">egzaminy.kssagittarius.pl</a>
                 </li>
