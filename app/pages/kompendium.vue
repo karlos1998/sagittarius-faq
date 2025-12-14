@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <div class="min-h-screen bg-gradient-to-tr from-blue-50 via-white to-indigo-100">
     <SeoHead
         title="Kompendium wiedzy: egzamin strzelecki - pytania, definicje, skrót, kluczowe zagadnienia"
         description="Najważniejsze informacje do egzaminu na broń: bezpieczeństwo, definicje, kodeks karny, parametry i praktyczne FAQ. Wszystko w jednym miejscu."
@@ -8,13 +8,13 @@
         image="/seo_kompendium.jpg"
     />
     <BackToInstrukcjaBar/>
-    <section class="py-16 bg-gradient-to-tr from-blue-50 via-white to-indigo-100">
+    <section class="py-16">
       <div class="container mx-auto px-4">
         <div class="max-w-2xl mx-auto">
           <h1 class="text-3xl md:text-5xl font-extrabold text-indigo-800 mb-5 text-center">Kompendium wiedzy – egzamin
             strzelecki</h1>
-          <p class="text-lg text-gray-700 text-center mb-8">Skrót najważniejszych zagadnień wymaganych na egzaminie – dla
-            przyszłych strzelców. Bez powtórzeń pytań, czytelnie i onboardingowo!</p>
+          <p class="text-lg text-gray-700 text-center mb-8">Skrót najważniejszych zagadnień wymaganych na egzaminie –
+            dla przyszłych strzelców. Bez powtórzeń pytań, czytelnie i onboardingowo!</p>
           <div class="space-y-8">
             <!-- Card: Pozwolenia i uprawnienia -->
             <div class="bg-white rounded-xl shadow-lg p-6 border-l-8 border-blue-600">
@@ -30,8 +30,8 @@
                   centralnego zapłonu (do 12 mm), gładkolufowej.
                 </li>
                 <li>Pozwolenia nie wymaga broń pneumatyczna (energia >17J wymaga rejestracji).</li>
-                <li>Pozwolenia nie wydaje się osobom skazanym prawomocnie za umyślne przestępstwa oraz wykazującym istotne
-                  zaburzenia psychiczne.
+                <li>Pozwolenia nie wydaje się osobom skazanym prawomocnie za umyślne przestępstwa oraz wykazującym
+                  istotne zaburzenia psychiczne.
                 </li>
                 <li>Pozwolenie może być cofnięte m.in. za naruszenie obowiązku rejestracji broni, noszenie broni po
                   alkoholu, naruszenie warunków pozwolenia.
@@ -52,7 +52,8 @@
                 <li>Broń należy zarejestrować w ciągu 5 dni od zakupu.</li>
                 <li>Utrata broni musi być zgłoszona Policji w ciągu 24 godzin.</li>
                 <li>Broń i amunicję przechowuje się w urządzeniach klasy co najmniej S1 (PN-EN 14450).</li>
-                <li>Amunicję nabywa się na podstawie legitymacji posiadacza broni – wyłącznie do broni w niej wpisanej.
+                <li>Amunicję nabywa się na podstawie legitymacji posiadacza broni – wyłącznie do broni w niej
+                  wpisanej.
                 </li>
               </ul>
             </div>
@@ -60,14 +61,16 @@
             <div class="bg-white rounded-xl shadow-lg p-6 border-l-8 border-red-500">
               <div class="flex items-center gap-3 text-xl font-bold mb-3 text-red-700">
                 <svg class="w-6 h-6 text-red-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h14v4m0 0l4-4m-4 4l4 4"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M3 10h14v4m0 0l4-4m-4 4l4 4"/>
                 </svg>
                 3. Odpowiedzialność karna
               </div>
               <ul class="list-disc ml-6 text-gray-800 space-y-1">
                 <li>Nielegalne posiadanie broni lub amunicji: 6 miesięcy – 8 lat pozbawienia wolności.</li>
                 <li>Nielegalne wytwarzanie lub handel bronią: 1–10 lat pozbawienia wolności.</li>
-                <li>Utrata broni z nieumyślności: grzywna, ograniczenie wolności lub do 1 roku pozbawienia wolności.</li>
+                <li>Utrata broni z nieumyślności: grzywna, ograniczenie wolności lub do 1 roku pozbawienia wolności.
+                </li>
                 <li>Noszenie broni po alkoholu: areszt lub grzywna.</li>
                 <li>Używanie broni poza strzelnicą w celach sportowych/szkoleniowych: areszt lub grzywna.</li>
               </ul>
@@ -145,8 +148,8 @@
                 8. Wymiary i parametry broni
               </div>
               <ul class="list-disc ml-6 text-gray-800 space-y-1">
-                <li>Pistolet sportowy: max masa: 1400 g, max długość lufy: 153 mm, min opór spustu: 1000 g, pudełko: 300 x
-                  150 x 50 mm
+                <li>Pistolet sportowy: max masa: 1400 g, max długość lufy: 153 mm, min opór spustu: 1000 g, pudełko: 300
+                  x 150 x 50 mm
                 </li>
                 <li>Pistolet dowolny: 1 nabój, brak limitu długości lufy i masy</li>
                 <li>Karabin pneumatyczny: max masa: 5,5 kg</li>
@@ -179,8 +182,8 @@
               <ul class="list-disc ml-6 text-gray-800 space-y-1">
                 <li>Obrona konieczna: odparcie bezpośredniego, bezprawnego zamachu.</li>
                 <li>Sąd może odstąpić od kary, jeśli przekroczenie było wynikiem strachu lub wzburzenia.</li>
-                <li>Stan wyższej konieczności: ratowanie dobra kosztem dobra o mniejszej wartości, gdy nie da się inaczej
-                  uniknąć niebezpieczeństwa.
+                <li>Stan wyższej konieczności: ratowanie dobra kosztem dobra o mniejszej wartości, gdy nie da się
+                  inaczej uniknąć niebezpieczeństwa.
                 </li>
               </ul>
             </div>
@@ -188,7 +191,7 @@
         </div>
       </div>
     </section>
-  </section>
+  </div>
 </template>
 <script setup>
 import BackToInstrukcjaBar from '~/components/BackToInstrukcjaBar.vue'

@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <div class="min-h-screen bg-gray-100">
     <SeoHead
         title="Ogólne zasady bezpieczeństwa w sporcie strzeleckim - FAQ Sagittarius"
         description="Oficjalny zbiór zasad bezpieczeństwa na strzelnicy i w sporcie strzeleckim przyjęty uchwałą Zarządu PZSS. Każdy przyszły posiadacz pozwolenia na broń powinien znać na egzaminie!"
@@ -8,7 +8,7 @@
         image="/seo_zasady.jpg"
     />
     <BackToInstrukcjaBar/>
-    <section class="py-16 bg-gray-100">
+    <section class="py-16">
       <div class="container mx-auto px-4">
         <div class="max-w-2xl mx-auto space-y-10">
           <h1 class="text-3xl md:text-4xl font-extrabold text-blue-700 mb-10 text-center">Ogólne zasady bezpieczeństwa w
@@ -23,8 +23,8 @@
                 Strzelectwa Sportowego.
               </li>
               <li>Za bezpieczeństwo w zorganizowanych formach szkolenia strzeleckiego i w strzelaniu rekreacyjnym
-                odpowiada <b>prowadzący strzelanie</b>, posiadający uprawnienia, o których mowa w rozporządzeniu MSWiA z 6
-                października 2011 roku (Dz. U. z 2011 r, poz. 1418). Uprawnienia o których mowa posiadają osoby
+                odpowiada <b>prowadzący strzelanie</b>, posiadający uprawnienia, o których mowa w rozporządzeniu MSWiA z
+                6 października 2011 roku (Dz. U. z 2011 r, poz. 1418). Uprawnienia o których mowa posiadają osoby
                 posiadające aktualną licencję sędziego lub trenera wydaną przez Polski Związek Strzelectwa Sportowego.
               </li>
             </ol>
@@ -34,8 +34,8 @@
           <div class="bg-white rounded-2xl shadow-xl p-7 border-l-8 border-green-500">
             <div class="font-bold text-xl text-green-800 mb-2">§ 2</div>
             <ol class="list-decimal ml-6 text-gray-800 space-y-2">
-              <li>Szczegółowe zasady bezpieczeństwa osób przebywających na strzelnicy określa <b>regulamin strzelnicy</b>,
-                ustalony zgodnie z przepisami ustawy z 21 maja 1999 r. o broni i amunicji.
+              <li>Szczegółowe zasady bezpieczeństwa osób przebywających na strzelnicy określa <b>regulamin
+                strzelnicy</b>, ustalony zgodnie z przepisami ustawy z 21 maja 1999 r. o broni i amunicji.
               </li>
               <li>Za organizację działań o charakterze ratunkowym na strzelnicy odpowiada <b>kierownik strzelnicy</b>.
               </li>
@@ -52,8 +52,8 @@
               <li>Bronią należy posługiwać się z najwyższą ostrożnością.</li>
               <li>Po wzięciu broni do ręki należy sprawdzić, czy jest rozładowana.</li>
               <li>Zabrania się kierowania wylotu lufy w kierunku ludzi.</li>
-              <li>Trening bezstrzałowy („na sucho”) z zasady jest dozwolony tylko na stanowisku strzeleckim lub, za zgodą
-                prowadzącego strzelanie, w innym miejscu przez niego wyznaczonym.
+              <li>Trening bezstrzałowy („na sucho”) z zasady jest dozwolony tylko na stanowisku strzeleckim lub, za
+                zgodą prowadzącego strzelanie, w innym miejscu przez niego wyznaczonym.
               </li>
               <li>Broni nie można pozostawiać bez dozoru.</li>
               <li>Zabrania się odkładania załadowanej broni w czasie przerw w strzelaniu.</li>
@@ -65,9 +65,9 @@
                   class="inline-block bg-yellow-100 font-semibold px-2 rounded">"STOP"</span> wszyscy strzelający muszą
                 natychmiast przerwać strzelanie.
               </li>
-              <li>Po komendzie <span class="inline-block bg-yellow-100 font-semibold px-2 rounded">„ROZŁADUJ”</span> broń
-                należy rozładować i zabezpieczyć, wkładając do komory nabojowej (lufy) wskaźnik bezpieczeństwa i w takim
-                stanie umieścić na stanowisku strzeleckim.
+              <li>Po komendzie <span class="inline-block bg-yellow-100 font-semibold px-2 rounded">„ROZŁADUJ”</span>
+                broń należy rozładować i zabezpieczyć, wkładając do komory nabojowej (lufy) wskaźnik bezpieczeństwa i w
+                takim stanie umieścić na stanowisku strzeleckim.
               </li>
               <li>Stosowanie wskaźnika bezpieczeństwa, potwierdzającego, że broń jest rozładowana a zamek otwarty, jest
                 obowiązkowe dla wszystkich pistoletów, karabinów i strzelb gładkolufowych.
@@ -87,8 +87,8 @@
               <li>Przebywający na strzelnicy musi niezwłocznie powiadomić prowadzącego strzelanie o sytuacji, która może
                 być niebezpieczna lub spowodować wypadek.
               </li>
-              <li>Zaleca się aby strzelający i inne osoby, przebywające na strzelnicy w bezpośrednim sąsiedztwie stanowisk
-                strzeleckich, używały indywidualnych ochraniaczy słuchu.
+              <li>Zaleca się aby strzelający i inne osoby, przebywające na strzelnicy w bezpośrednim sąsiedztwie
+                stanowisk strzeleckich, używały indywidualnych ochraniaczy słuchu.
               </li>
               <li>Zaleca się aby strzelający, podczas strzelania, używali przeciwodpryskowych okularów strzeleckich lub
                 innych ochraniaczy spełniających taką funkcję.
@@ -107,7 +107,7 @@
         </div>
       </div>
     </section>
-  </section>
+  </div>
 </template>
 <script setup>
 import BackToInstrukcjaBar from '~/components/BackToInstrukcjaBar.vue'
