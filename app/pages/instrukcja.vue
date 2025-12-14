@@ -152,6 +152,17 @@
                     Rozporządzenie o przewożeniu broni środkami transportu publicznego
                   </NuxtLink>
                 </li>
+                <li class="flex items-center gap-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-pink-600" viewBox="0 0 24 24" fill="none"
+                       stroke="currentColor">
+                    <rect width="18" height="20" x="3" y="2" rx="2" fill="#fce7f3"/>
+                    <path stroke="#db2777" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                          d="M8 7h8M8 11h8M8 15h8"></path>
+                  </svg>
+                  <NuxtLink to="/kompendium" class="text-pink-700 underline font-semibold">Kompendium wiedzy – skrót
+                    egzaminacyjny
+                  </NuxtLink>
+                </li>
                 <li>Ćwicz pytania egzaminacyjne: <a class="text-indigo-700 underline font-semibold"
                                                     href="https://egzaminy.kssagittarius.pl/" target="_blank">egzaminy.kssagittarius.pl</a>
                 </li>
