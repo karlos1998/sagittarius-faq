@@ -21,7 +21,7 @@
             W każdym momencie znajdziesz instrukcję oraz wymagane materiały.
           </p>
           <div class="flex flex-col items-center md:items-start">
-            <NuxtLink to="/instrukcja">
+            <NuxtLink to="/jak-uzyskac-pozwolenie-na-bron-krok-po-kroku">
               <button
                   class="inline-flex items-center gap-3 text-lg md:text-xl bg-blue-600 hover:bg-blue-700 transition-colors shadow-xl text-white font-semibold py-4 px-8 rounded-2xl mb-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 mr-2" fill="none" viewBox="0 0 24 24"
