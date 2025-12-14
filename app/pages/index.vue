@@ -5,9 +5,9 @@ import type {CityData} from '~/types/city'
 const {data: cities} = await useFetch<CityData[]>('/api/cities')
 
 // Active section state
-const activeSection = ref<'komenda' | 'pzss'>('komenda')
+const activeSection = ref<'komenda' | 'pzss' | 'materialy'>('komenda')
 
-const handleSectionChange = (section: 'komenda' | 'pzss') => {
+const handleSectionChange = (section: 'komenda' | 'pzss' | 'materialy') => {
   activeSection.value = section
 }
 </script>
@@ -28,6 +28,8 @@ const handleSectionChange = (section: 'komenda' | 'pzss') => {
 
     <!-- PZSS Section -->
     <PzssSection v-if="activeSection === 'pzss'"/>
+
+    <MaterialySection v-if="activeSection === 'materialy'"/>
 
     <!-- Info Section -->
     <InfoSection/>

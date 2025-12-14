@@ -73,19 +73,19 @@
           </div>
         </div>
         <!-- Illustrative Onboarding SVG/graphic -->
-        <div class="flex-1 flex items-center justify-center">
-          <svg width="320" height="240" fill="none" viewBox="0 0 320 240">
-            <rect width="320" height="240" rx="32" fill="#dbeafe"/>
-            <circle cx="80" cy="90" r="50" fill="#2563eb" fill-opacity=".2"/>
-            <circle cx="240" cy="90" r="40" fill="#6366f1" fill-opacity=".18"/>
-            <rect x="120" y="140" width="80" height="26" rx="13" fill="#2563eb" fill-opacity=".45"/>
-            <rect x="135" y="85" width="50" height="65" rx="11" fill="#fff" stroke="#2563eb" stroke-width="2.5"/>
-            <path d="M140 130h40" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
-            <rect x="150" y="105" width="20" height="12" rx="3" fill="#6366f1"/>
-            <circle cx="175" cy="110" r="3" fill="#2563eb"/>
-            <rect x="158" y="116" width="4" height="5" rx="2" fill="#2563eb"/>
-          </svg>
-        </div>
+<!--        <div class="flex-1 flex items-center justify-center">-->
+<!--          <svg width="320" height="240" fill="none" viewBox="0 0 320 240">-->
+<!--            <rect width="320" height="240" rx="32" fill="#dbeafe"/>-->
+<!--            <circle cx="80" cy="90" r="50" fill="#2563eb" fill-opacity=".2"/>-->
+<!--            <circle cx="240" cy="90" r="40" fill="#6366f1" fill-opacity=".18"/>-->
+<!--            <rect x="120" y="140" width="80" height="26" rx="13" fill="#2563eb" fill-opacity=".45"/>-->
+<!--            <rect x="135" y="85" width="50" height="65" rx="11" fill="#fff" stroke="#2563eb" stroke-width="2.5"/>-->
+<!--            <path d="M140 130h40" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>-->
+<!--            <rect x="150" y="105" width="20" height="12" rx="3" fill="#6366f1"/>-->
+<!--            <circle cx="175" cy="110" r="3" fill="#2563eb"/>-->
+<!--            <rect x="158" y="116" width="4" height="5" rx="2" fill="#2563eb"/>-->
+<!--          </svg>-->
+<!--        </div>-->
       </div>
     </div>
   </section>

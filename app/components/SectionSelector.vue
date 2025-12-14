@@ -1,10 +1,10 @@
 <script setup lang="ts">
 interface Props {
-  activeSection: 'komenda' | 'pzss'
+  activeSection: 'komenda' | 'pzss' | 'materialy'
 }
 
 const emit = defineEmits<{
-  sectionChange: [section: 'komenda' | 'pzss']
+  sectionChange: [section: 'komenda' | 'pzss' | 'materialy']
 }>()
 
 defineProps<Props>()
@@ -38,6 +38,18 @@ defineProps<Props>()
           >
             <div class="text-lg">PZSS</div>
             <div class="text-sm opacity-80">Licencje zawodnicze w Polskim Związku Strzelectwa Sportowego</div>
+          </button>
+          <button
+              @click="emit('sectionChange', 'materialy')"
+              :class="[
+                'flex-1 py-4 px-6 rounded-lg font-semibold text-center transition-colors',
+                activeSection === 'materialy'
+                  ? 'bg-blue-600 text-white'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+              ]"
+          >
+            <div class="text-lg">Materiały do nauki</div>
+            <div class="text-sm opacity-80">PDFy, quizy, ustawy, regulaminy – całość do przygotowań</div>
           </button>
         </div>
       </div>
