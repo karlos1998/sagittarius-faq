@@ -97,7 +97,7 @@
                   klubu, by rozpocząć staż.</p>
               </div>
             </div>
-            <!-- Step 4 -->
+            <!-- Step 4 - visually boosted resources -->
             <div
                 class="flex flex-col sm:flex-row items-start gap-3 md:space-x-4 bg-gradient-to-r from-white via-indigo-50 to-white shadow-md md:shadow-xl rounded-xl md:rounded-2xl p-4 md:p-7 border-s-4 md:border-s-8 border-indigo-700 group hover:scale-[1.01] md:hover:scale-[1.015] transition-transform">
               <div class="flex-shrink-0 mb-2 sm:mb-0">
@@ -113,83 +113,92 @@
               <div class="flex-1">
                 <h2 class="text-lg md:text-2xl font-bold mb-1 md:mb-2 text-indigo-900 leading-tight bg-white/80 px-2 py-1 rounded-lg md:rounded-xl shadow-sm">
                   Rozpocznij naukę i przygotowania do egzaminu</h2>
-                <ul class="list-disc list-inside ml-3 text-gray-700 text-base md:text-lg space-y-2">
-                  <li class="flex items-center gap-2">
-                    <svg width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                          d="M7 2.75a4.25 4.25 0 1 1 8.5 0 4.252 4.252 0 0 1-7.543 2.612c-.432-.471-1.103-.674-1.674-.335A1.416 1.416 0 0 0 5 6.015v10.47A1.75 1.75 0 0 0 6.75 18.25h10.5A1.75 1.75 0 0 0 19 16.485V6.015c0-.529-.422-.99-.968-1.163-.677-.213-1.339.233-1.674.335A4.25 4.25 0 0 1 7 2.75ZM6.5 6.138V2.75A5.501 5.501 0 0 1 12 0c3.03 0 5.5 2.427 5.5 5.5v3.811"
-                          stroke="#6366F1" stroke-width="1.5"/>
-                      <rect x="8" y="13" width="8" height="2" rx="1" fill="#e53e3e"/>
-                      <rect x="8" y="9" width="8" height="2" rx="1" fill="#2563eb"/>
-                      <rect x="8" y="5" width="8" height="2" rx="1" fill="#16a34a"/>
-                    </svg>
-                    <a class="text-indigo-700 underline font-semibold" href="/ustawa-o-broni.pdf" target="_blank">Ustawa
-                      o broni i amunicji (PDF)</a></li>
-                  <li class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-600" viewBox="0 0 20 20"
-                         fill="currentColor">
-                      <path fill-rule="evenodd"
-                            d="M8.257 3.099c.763-1.36 2.72-1.36 3.482 0l6.518 11.628c.75 1.338-.213 3.023-1.74 3.023H3.48c-1.527 0-2.49-1.685-1.74-3.023L8.257 3.1zM11 13a1 1 0 10-2 0 1 1 0 002 0zm-1-2a.75.75 0 01.75-.75h.005a.75.75 0 01.745.743A.75.75 0 019.75 11a.75.75 0 01.745-.75A.75.75 0 0111 10z"
-                            clip-rule="evenodd"/>
-                    </svg>
-                    <a class="text-indigo-700 underline font-semibold" href="/wzorcowy-regulamin-strzelnic.pdf"
-                       target="_blank">Wzorcowy regulamin strzelnic (PDF)</a></li>
-                  <li class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-600" viewBox="0 0 24 24"
-                         fill="none" stroke="currentColor">
-                      <rect width="18" height="20" x="3" y="2" rx="2" fill="#e0f2fe"/>
-                      <path stroke="#2563eb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                            d="M8 7h8M8 11h8M8 15h8"></path>
-                    </svg>
-                    <a class="text-indigo-700 underline font-semibold" href="/rozporzadzenie-o-przechowywaniu.pdf"
-                       target="_blank">Rozporządzenie o przechowywaniu broni (PDF)</a></li>
-                  <li class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-600" viewBox="0 0 24 24"
-                         fill="none" stroke="currentColor">
-                      <circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/>
-                      <path stroke="#22c55e" stroke-width="2" stroke-linecap="round" d="M8 12l2 2 4-4"/>
-                    </svg>
-                    <NuxtLink to="/zasady-bezpieczenstwa" class="text-indigo-700 underline font-semibold">Ogólne zasady
-                      bezpieczeństwa w sporcie strzeleckim
+
+                <!-- Polecane Materiały do egzaminu -->
+                <div class="mb-4">
+                  <div class="font-semibold text-indigo-800 text-base mb-2">Materiał egzaminacyjny PDF – pobierz:</div>
+                  <div class="flex flex-wrap gap-2">
+                    <a href="/ustawa-o-broni.pdf" target="_blank"
+                       class="px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white font-bold shadow transition text-sm flex gap-2 items-center">
+                      <svg width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="8" y="5" width="8" height="2" rx="1" fill="#6366F1"/>
+                        <rect x="8" y="9" width="8" height="2" rx="1" fill="#6366F1"/>
+                        <rect x="8" y="13" width="8" height="2" rx="1" fill="#6366F1"/>
+                      </svg>
+                      Ustawa o broni i amunicji
+                    </a>
+                    <a href="/wzorcowy-regulamin-strzelnic.pdf" target="_blank"
+                       class="px-4 py-2 rounded-lg bg-red-600 hover:bg-red-700 text-white font-bold shadow transition text-sm flex gap-2 items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                           stroke="#fff">
+                        <rect width="18" height="20" x="3" y="2" rx="2" fill="#fff"/>
+                        <path stroke="#fff" stroke-width="1.5" d="M8 7h8M8 11h8M8 15h8"></path>
+                      </svg>
+                      Regulamin strzelnic
+                    </a>
+                    <a href="/rozporzadzenie-o-przechowywaniu.pdf" target="_blank"
+                       class="px-4 py-2 rounded-lg bg-blue-500 hover:bg-blue-700 text-white font-bold shadow transition text-sm flex gap-2 items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                           stroke="#fff">
+                        <rect width="18" height="20" x="3" y="2" rx="2" fill="#fff"/>
+                        <path stroke="#fff" stroke-width="1.5" d="M8 7h8M8 11h8M8 15h8"></path>
+                      </svg>
+                      Rozporządzenie o przechowywaniu
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Polecane strony / quizy -->
+                <div class="mb-4">
+                  <div class="font-semibold text-indigo-800 text-base mb-2">Interaktywne materiały:</div>
+                  <div class="flex flex-wrap gap-2">
+                    <NuxtLink to="/kompendium"
+                              class="px-4 py-2 rounded-lg bg-pink-600 hover:bg-pink-700 text-white font-bold shadow transition text-sm flex gap-2 items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                           stroke="#fff">
+                        <rect width="18" height="20" x="3" y="2" rx="2" fill="#fff"/>
+                        <path stroke="#fff" stroke-width="1.5" d="M8 7h8M8 11h8M8 15h8"></path>
+                      </svg>
+                      Kompendium egzaminacyjne
                     </NuxtLink>
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-indigo-600" viewBox="0 0 24 24"
-                         fill="none" stroke="currentColor">
-                      <rect width="18" height="20" x="3" y="2" rx="2" fill="#e0e7ff"/>
-                      <path stroke="#6366F1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                            d="M8 7h8M8 11h8M8 15h8"></path>
-                    </svg>
-                    <NuxtLink to="/rozporzadzenie-transport" class="text-indigo-700 underline font-semibold">
-                      Rozporządzenie o przewożeniu broni środkami transportu publicznego
+                    <NuxtLink to="/skrocona-ustawa-o-broni-i-amunicji"
+                              class="px-4 py-2 rounded-lg bg-orange-500 hover:bg-orange-700 text-white font-bold shadow transition text-sm flex gap-2 items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                           stroke="#fff">
+                        <rect width="18" height="20" x="3" y="2" rx="2" fill="#fff"/>
+                        <path stroke="#fff" stroke-width="1.5" d="M8 7h8M8 11h8M8 15h8"></path>
+                      </svg>
+                      Skrócona ustawa o broni
                     </NuxtLink>
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-pink-600" viewBox="0 0 24 24"
-                         fill="none" stroke="currentColor">
-                      <rect width="18" height="20" x="3" y="2" rx="2" fill="#fce7f3"/>
-                      <path stroke="#db2777" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                            d="M8 7h8M8 11h8M8 15h8"></path>
-                    </svg>
-                    <NuxtLink to="/kompendium" class="text-pink-700 underline font-semibold">Kompendium wiedzy – skrót
-                      egzaminacyjny
-                    </NuxtLink>
-                  </li>
-                  <li class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-orange-600" viewBox="0 0 24 24"
-                         fill="none" stroke="currentColor">
-                      <rect width="18" height="20" x="3" y="2" rx="2" fill="#fed7aa"/>
-                      <path stroke="#ea580c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                            d="M8 7h8M8 11h8M8 15h8"/>
-                    </svg>
-                    <NuxtLink to="/skrocona-ustawa-o-broni-i-amunicji" class="text-orange-700 underline font-semibold">
-                      SKRÓCONA USTAWA O BRONI I AMUNICJI
-                    </NuxtLink>
-                  </li>
-                  <li>Ćwicz pytania egzaminacyjne: <a class="text-indigo-700 underline font-semibold"
-                                                      href="https://egzaminy.kssagittarius.pl/" target="_blank">egzaminy.kssagittarius.pl</a>
-                  </li>
-                </ul>
+                    <a href="https://egzaminy.kssagittarius.pl/" target="_blank"
+                       class="px-4 py-2 rounded-lg bg-indigo-500 hover:bg-indigo-700 text-white font-bold shadow transition text-sm flex gap-2 items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                           stroke="#fff">
+                        <rect width="18" height="20" x="3" y="2" rx="2" fill="#fff"/>
+                        <path stroke="#fff" stroke-width="1.5" d="M8 7h8M8 11h8M8 15h8"></path>
+                      </svg>
+                      Ćwicz pytania egzaminacyjne
+                    </a>
+                  </div>
+                </div>
+                <!-- Pozostałe, rekomendowane -->
+                <div class="mb-2">
+                  <div class="font-semibold text-indigo-800 text-base mb-2">Pozostałe przydatne zasoby:</div>
+                  <ul class="list-none ml-0 text-gray-700 text-base md:text-lg space-y-2">
+                    <li>
+                      <NuxtLink to="/zasady-bezpieczenstwa"
+                                class="font-semibold text-green-700 underline hover:text-green-800">Ogólne zasady
+                        bezpieczeństwa w sporcie strzeleckim
+                      </NuxtLink>
+                    </li>
+                    <li>
+                      <NuxtLink to="/rozporzadzenie-transport"
+                                class="font-semibold text-indigo-700 underline hover:text-indigo-800">Rozporządzenie o
+                        przewożeniu broni środkami transportu publicznego
+                      </NuxtLink>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
