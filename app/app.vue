@@ -35,10 +35,13 @@
         </div>
       </div>
     </footer>
+    <InstallPwaBanner/>
   </div>
 </template>
 
 <script setup lang="ts">
+import InstallPwaBanner from './components/InstallPwaBanner.vue'
+
 useHead({
   title: 'KSSagittarius | Klub strzelecki',
   meta: [
