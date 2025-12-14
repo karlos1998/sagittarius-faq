@@ -223,6 +223,14 @@
           </Card>
         </div>
       </div>
+
+      <div class="mt-14 flex flex-col items-center">
+        <NuxtLink to="/ustawa-o-broni-i-amunicji"
+                  class="w-full max-w-xs px-6 py-3 text-lg font-semibold bg-indigo-700 hover:bg-indigo-900 text-white rounded-xl shadow-lg transition text-center uppercase tracking-wider">
+          Pełna wersja ustawy
+        </NuxtLink>
+      </div>
+
     </section>
   </div>
 </template>

@@ -24,7 +24,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="bg-black text-white py-8 mt-16">
+    <footer class="bg-black text-white py-8">
       <div class="container mx-auto px-6">
         <div class="text-center">
           <p class="text-gray-400">

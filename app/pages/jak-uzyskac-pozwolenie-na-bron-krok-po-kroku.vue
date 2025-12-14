@@ -168,7 +168,7 @@
                         <rect width="18" height="20" x="3" y="2" rx="2" fill="#fff"/>
                         <path stroke="#fff" stroke-width="1.5" d="M8 7h8M8 11h8M8 15h8"></path>
                       </svg>
-                      Skrócona ustawa o broni
+                      Skrócona ustawa o broni i amunicji
                     </NuxtLink>
                     <a href="https://egzaminy.kssagittarius.pl/" target="_blank"
                        class="px-4 py-2 rounded-lg bg-indigo-500 hover:bg-indigo-700 text-white font-bold shadow transition text-sm flex gap-2 items-center">
@@ -179,6 +179,15 @@
                       </svg>
                       Ćwicz pytania egzaminacyjne
                     </a>
+                    <NuxtLink to="/ustawa-o-broni-i-amunicji"
+                              class="px-4 py-2 rounded-lg bg-orange-500 hover:bg-orange-700 text-white font-bold shadow transition text-sm flex gap-2 items-center">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24"
+                           stroke="#fff">
+                        <rect width="18" height="20" x="3" y="2" rx="2" fill="#fff"/>
+                        <path stroke="#fff" stroke-width="1.5" d="M8 7h8M8 11h8M8 15h8"></path>
+                      </svg>
+                      ustawa o broni i amunicji
+                    </NuxtLink>
                   </div>
                 </div>
                 <!-- Pozostałe, rekomendowane -->
