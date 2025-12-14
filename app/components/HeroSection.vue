@@ -1,19 +1,54 @@
 <template>
-  <section class="py-16 bg-gray-50">
-    <div class="container mx-auto px-6">
-      <div class="max-w-3xl mx-auto text-center">
-        <NuxtLink to="/instrukcja" class="block mb-8">
-          <div
-              class="bg-blue-600 hover:bg-blue-700 transition-colors text-white rounded-xl px-6 py-5 shadow-lg text-2xl font-semibold">
-            Jak uzyskać pozwolenie na broń – instrukcja krok po kroku
+  <section class="relative py-20 bg-gradient-to-br from-blue-50 via-white to-blue-100 overflow-hidden">
+    <div class="absolute inset-0 pointer-events-none">
+      <svg class="absolute opacity-20 top-0 right-0 w-64 h-64 text-blue-100" fill="currentColor" viewBox="0 0 400 400">
+        <circle cx="200" cy="200" r="200"/>
+      </svg>
+      <svg class="absolute opacity-30 bottom-0 left-0 w-72 h-72 text-blue-300" fill="currentColor"
+           viewBox="0 0 400 400">
+        <rect x="50" y="50" width="300" height="300" rx="70"/>
+      </svg>
+    </div>
+    <div class="relative z-10">
+      <div class="container mx-auto px-6 flex flex-col md:flex-row items-center md:space-x-10">
+        <div class="flex-1 text-center md:text-left mb-8 md:mb-0">
+          <h1 class="text-4xl md:text-6xl font-extrabold text-blue-800 mb-4 leading-tight drop-shadow-lg">
+            Twoja droga do<br>
+            <span class="bg-blue-100 px-2 rounded-xl">pozwolenia na broń</span>
+          </h1>
+          <p class="text-xl md:text-2xl text-gray-600 mb-7 md:mb-8">
+            Najprościej, krok po kroku, przejdziesz od zgłoszenia do klubu aż po komplet dokumentów do WPA. <br>
+            W każdym momencie znajdziesz instrukcję oraz wymagane materiały.
+          </p>
+          <div class="flex flex-col items-center md:items-start">
+            <NuxtLink to="/instrukcja">
+              <button
+                  class="inline-flex items-center gap-3 text-lg md:text-xl bg-blue-600 hover:bg-blue-700 transition-colors shadow-xl text-white font-semibold py-4 px-8 rounded-2xl mb-2">
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7 mr-2" fill="none" viewBox="0 0 24 24"
+                     stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M13 16h-1v-4h-1m1 4v-4m4 6H7a2 2 0 01-2-2V7a2 2 0 012-2h5.618a2 2 0 011.447.553l4.382 4.09A2 2 0 0120 10.09V18a2 2 0 01-2 2z"/>
+                </svg>
+                Jak uzyskać pozwolenie na broń – instrukcja krok po kroku
+              </button>
+            </NuxtLink>
+            <span class="text-blue-700 text-base font-medium">Rozpocznij ścieżkę członkowską z klubem Sagittarius</span>
           </div>
-        </NuxtLink>
-        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-          Składanie wniosków na broń
-        </h1>
-        <p class="text-xl text-gray-600 mb-8">
-          Znajdź wszystkie informacje dotyczące składania wniosków w komendzie wojewódzkiej oraz PZSS
-        </p>
+        </div>
+        <!-- Illustrative Onboarding SVG/graphic -->
+        <div class="flex-1 flex items-center justify-center">
+          <svg width="320" height="240" fill="none" viewBox="0 0 320 240">
+            <rect width="320" height="240" rx="32" fill="#dbeafe"/>
+            <circle cx="80" cy="90" r="50" fill="#2563eb" fill-opacity=".2"/>
+            <circle cx="240" cy="90" r="40" fill="#6366f1" fill-opacity=".18"/>
+            <rect x="120" y="140" width="80" height="26" rx="13" fill="#2563eb" fill-opacity=".45"/>
+            <rect x="135" y="85" width="50" height="65" rx="11" fill="#fff" stroke="#2563eb" stroke-width="2.5"/>
+            <path d="M140 130h40" stroke="#6366f1" stroke-width="2" stroke-linecap="round"/>
+            <rect x="150" y="105" width="20" height="12" rx="3" fill="#6366f1"/>
+            <circle cx="175" cy="110" r="3" fill="#2563eb"/>
+            <rect x="158" y="116" width="4" height="5" rx="2" fill="#2563eb"/>
+          </svg>
+        </div>
       </div>
     </div>
   </section>
