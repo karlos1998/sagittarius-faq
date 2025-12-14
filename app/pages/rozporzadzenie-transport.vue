@@ -1,5 +1,12 @@
 <template>
   <section>
+    <SeoHead
+        title="Rozporządzenie w sprawie przewozu broni i amunicji środkami transportu publicznego"
+        description="Pełny tekst dziennika ustaw dot. przewozu broni, amunicji i zasad bezpieczeństwa w komunikacji publicznej. Wiedza wymagana do egzaminu strzeleckiego."
+        keywords="rozporządzenie przewóz broni, transport publiczny, dziennik ustaw, przewóz amunicji, przepisy, egzamin strzelecki, Sagittarius FAQ"
+        canonical="/rozporzadzenie-transport"
+        image="/seo_rozporzadzenie_transport.jpg"
+    />
     <BackToInstrukcjaBar/>
     <section class="py-16 bg-gray-100">
       <div class="container mx-auto px-4">
@@ -97,4 +104,5 @@
 </template>
 <script setup>
 import BackToInstrukcjaBar from '~/components/BackToInstrukcjaBar.vue'
+import SeoHead from '~/components/SeoHead.vue'
 </script>

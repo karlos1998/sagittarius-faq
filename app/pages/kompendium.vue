@@ -1,5 +1,12 @@
 <template>
   <section>
+    <SeoHead
+        title="Kompendium wiedzy: egzamin strzelecki - pytania, definicje, skrót, kluczowe zagadnienia"
+        description="Najważniejsze informacje do egzaminu na broń: bezpieczeństwo, definicje, kodeks karny, parametry i praktyczne FAQ. Wszystko w jednym miejscu."
+        keywords="kompendium wiedzy, egzamin strzelecki, pytania, skrót, wiedza, definicje, przewodnik, PZSS, regulamin, bezpieczeństwo, porady"
+        canonical="/kompendium"
+        image="/seo_kompendium.jpg"
+    />
     <BackToInstrukcjaBar/>
     <section class="py-16 bg-gradient-to-tr from-blue-50 via-white to-indigo-100">
       <div class="container mx-auto px-4">
@@ -185,4 +192,5 @@
 </template>
 <script setup>
 import BackToInstrukcjaBar from '~/components/BackToInstrukcjaBar.vue'
+import SeoHead from '~/components/SeoHead.vue'
 </script>

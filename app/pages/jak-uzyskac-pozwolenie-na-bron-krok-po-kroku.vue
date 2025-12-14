@@ -1,5 +1,12 @@
 <template>
   <section class="py-16 bg-gradient-to-b from-blue-50 via-white to-blue-100">
+    <SeoHead
+        title="Jak uzyskać pozwolenie na broń krok po kroku - instrukcja, poradnik, FAQ"
+        description="Realny, praktyczny i pełen przewodnik po wszystkich etapach uzyskania pozwolenia na broń w Polsce — klub strzelecki, PZSS, egzaminy, komendy, porady."
+        keywords="pozwolenie na broń, egzamin strzelecki, poradnik, instrukcja, jak uzyskać pozwolenie, klub strzelecki, PZSS, WPA, rejestracja broni, strzelanie, kompendium"
+        canonical="/jak-uzyskac-pozwolenie-na-bron-krok-po-kroku"
+        image="/seo_main.jpg"
+    />
     <div class="container mx-auto px-4">
       <div class="max-w-3xl mx-auto">
         <h1 class="text-4xl md:text-5xl font-extrabold text-gradient text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-sky-500 to-indigo-600 text-center mb-12 drop-shadow-lg">
@@ -28,7 +35,7 @@
               </p>
               <!-- Location link -->
               <a class="inline-flex items-center mt-2 text-blue-600 underline font-medium hover:text-blue-800 transition"
-                 href="https://www.google.com/maps/place/Klub+Strzelecki+SAGITTARIUS/@53.2029213,22.0981789,15z"
+                 href="https://www.google.com/maps/place/Klub+Strzelecki+SAGITTARIUS/@53.2037665,22.0994092,1373m/data=!3m1!1e3!4m6!3m5!1s0x471e3248daa0b98d:0x760cdd88645f1915!8m2!3d53.2029213!4d22.0981789!16s%2Fg%2F1pzs0ttnj?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
                  target="_blank">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1" fill="none" viewBox="0 0 24 24"
                      stroke="currentColor">
@@ -174,3 +181,6 @@
     </div>
   </section>
 </template>
+<script setup>
+import SeoHead from '~/components/SeoHead.vue'
+</script>

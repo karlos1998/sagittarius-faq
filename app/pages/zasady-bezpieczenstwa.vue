@@ -1,5 +1,12 @@
 <template>
   <section>
+    <SeoHead
+        title="Ogólne zasady bezpieczeństwa w sporcie strzeleckim - FAQ Sagittarius"
+        description="Oficjalny zbiór zasad bezpieczeństwa na strzelnicy i w sporcie strzeleckim przyjęty uchwałą Zarządu PZSS. Każdy przyszły posiadacz pozwolenia na broń powinien znać na egzaminie!"
+        keywords="zasady bezpieczeństwa, strzelnica, PZSS, regulamin, egzamin strzelecki, FAQ, bezpieczeństwo na strzelnicy, Sagittarius"
+        canonical="/zasady-bezpieczenstwa"
+        image="/seo_zasady.jpg"
+    />
     <BackToInstrukcjaBar/>
     <section class="py-16 bg-gray-100">
       <div class="container mx-auto px-4">
@@ -104,4 +111,5 @@
 </template>
 <script setup>
 import BackToInstrukcjaBar from '~/components/BackToInstrukcjaBar.vue'
+import SeoHead from '~/components/SeoHead.vue'
 </script>
