@@ -20,103 +20,100 @@
     <section class="pb-16">
       <div class="container mx-auto px-4">
         <div class="max-w-3xl mx-auto">
-          <h1 class="text-4xl md:text-5xl font-extrabold text-gradient text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-sky-500 to-indigo-600 text-center mb-12 drop-shadow-lg">
+          <h1 class="text-3xl md:text-5xl font-extrabold text-gradient text-transparent bg-clip-text bg-gradient-to-r from-blue-600 via-sky-500 to-indigo-600 text-center mb-8 md:mb-12 drop-shadow-lg">
             Jak uzyskać pozwolenie na broń – krok po kroku</h1>
           <!-- Steps timeline -->
-          <div class="space-y-8">
+          <div class="space-y-4 md:space-y-8">
             <!-- Step 1 -->
             <div
-                class="flex items-start space-x-4 bg-gradient-to-r from-white via-blue-50 to-white shadow-xl rounded-2xl p-7 border-s-8 border-blue-600 group hover:scale-[1.015] transition-transform">
-              <div class="flex-shrink-0">
+                class="flex flex-col sm:flex-row items-start gap-3 md:space-x-4 bg-gradient-to-r from-white via-blue-50 to-white shadow-md md:shadow-xl rounded-xl md:rounded-2xl p-4 md:p-7 border-s-4 md:border-s-8 border-blue-600 group hover:scale-[1.01] md:hover:scale-[1.015] transition-transform">
+              <div class="flex-shrink-0 mb-2 sm:mb-0">
                 <div
-                    class="bg-blue-600 shadow-lg text-white rounded-full w-14 h-14 flex items-center justify-center text-3xl border-4 border-white group-hover:border-blue-300">
+                    class="bg-blue-600 shadow text-white rounded-full w-10 h-10 md:w-14 md:h-14 flex items-center justify-center text-xl md:text-3xl border-2 md:border-4 border-white group-hover:border-blue-300">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                       class="w-8 h-8">
+                       class="w-6 h-6 md:w-8 md:h-8">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M17 20h5v-2a3 3 0 00-3-3h-4V7a5 5 0 00-8 4v6H3a2 2 0 00-2 2v1h15z"/>
                   </svg>
                 </div>
               </div>
               <div class="flex-1">
-                <h2 class="text-2xl font-bold mb-2 text-blue-800 leading-tight bg-white/80 px-2 py-1 rounded-xl shadow-sm">
+                <h2 class="text-lg md:text-2xl font-bold mb-1 md:mb-2 text-blue-800 leading-tight bg-white/80 px-2 py-1 rounded-lg md:rounded-xl shadow-sm">
                   Dołącz do Klubu Strzeleckiego Sagittarius</h2>
-                <p class="text-gray-700 mb-1 text-lg">
-                  Zapisz się online przez <a class="text-blue-600 underline font-semibold" href="http://Kssagittarius.pl"
-                                             target="_blank">ankietę</a> lub stacjonarnie.
-                </p>
+                <p class="text-gray-700 mb-1 text-base md:text-lg">Zapisz się online przez <a
+                    class="text-blue-600 underline font-semibold" href="http://Kssagittarius.pl"
+                    target="_blank">ankietę</a> lub stacjonarnie.</p>
                 <!-- Location link -->
                 <a class="inline-flex items-center mt-2 text-blue-600 underline font-medium hover:text-blue-800 transition"
                    href="https://www.google.com/maps/place/Klub+Strzelecki+SAGITTARIUS/@53.2037665,22.0994092,1373m/data=!3m1!1e3!4m6!3m5!1s0x471e3248daa0b98d:0x760cdd88645f1915!8m2!3d53.2029213!4d22.0981789!16s%2Fg%2F1pzs0ttnj?entry=ttu&g_ep=EgoyMDI1MTIwOS4wIKXMDSoASAFQAw%3D%3D"
                    target="_blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-1" fill="none" viewBox="0 0 24 24"
-                       stroke="currentColor">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 md:w-5 md:h-5 mr-1" fill="none"
+                       viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M17.657 16.657L13.414 12.414a2 2 0 112.828-2.828l4.243 4.243a2 2 0 01-2.828 2.828z"/>
                   </svg>
-                  Zobacz lokalizację klubu
-                </a>
+                  Zobacz lokalizację klubu</a>
               </div>
             </div>
             <!-- Step 2 -->
             <div
-                class="flex items-start space-x-4 bg-gradient-to-r from-white via-green-50 to-white shadow-xl rounded-2xl p-7 border-s-8 border-green-600 group hover:scale-[1.015] transition-transform">
-              <div class="flex-shrink-0">
+                class="flex flex-col sm:flex-row items-start gap-3 md:space-x-4 bg-gradient-to-r from-white via-green-50 to-white shadow-md md:shadow-xl rounded-xl md:rounded-2xl p-4 md:p-7 border-s-4 md:border-s-8 border-green-600 group hover:scale-[1.01] md:hover:scale-[1.015] transition-transform">
+              <div class="flex-shrink-0 mb-2 sm:mb-0">
                 <div
-                    class="bg-green-600 shadow-lg text-white rounded-full w-14 h-14 flex items-center justify-center text-3xl border-4 border-white group-hover:border-green-300">
+                    class="bg-green-600 shadow text-white rounded-full w-10 h-10 md:w-14 md:h-14 flex items-center justify-center text-xl md:text-3xl border-2 md:border-4 border-white group-hover:border-green-300">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                       class="w-8 h-8">
+                       class="w-6 h-6 md:w-8 md:h-8">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11c0-1.105-.895-2-2-2s-2 .895-2 2v3.159c0 .538.214 1.055.596 1.436L15 17zm-6-1.045V10a6 6 0 1112 0v6.955c0-2.093-1.734-3.955-3.855-3.955S9 13.862 9 15.955z"/>
                   </svg>
                 </div>
               </div>
               <div class="flex-1">
-                <h2 class="text-2xl font-bold mb-2 text-green-800 leading-tight bg-white/80 px-2 py-1 rounded-xl shadow-sm">
+                <h2 class="text-lg md:text-2xl font-bold mb-1 md:mb-2 text-green-800 leading-tight bg-white/80 px-2 py-1 rounded-lg md:rounded-xl shadow-sm">
                   Odbierz potwierdzenie założenia konta klubowego</h2>
-                <p class="text-gray-700 text-lg">Po zatwierdzeniu wniosku przez klub otrzymasz e-mail z potwierdzeniem
-                  członkostwa.</p>
+                <p class="text-gray-700 text-base md:text-lg">Po zatwierdzeniu wniosku przez klub otrzymasz e-mail z
+                  potwierdzeniem członkostwa.</p>
               </div>
             </div>
             <!-- Step 3 -->
             <div
-                class="flex items-start space-x-4 bg-gradient-to-r from-white via-yellow-50 to-white shadow-xl rounded-2xl p-7 border-s-8 border-yellow-500 group hover:scale-[1.015] transition-transform">
-              <div class="flex-shrink-0">
+                class="flex flex-col sm:flex-row items-start gap-3 md:space-x-4 bg-gradient-to-r from-white via-yellow-50 to-white shadow-md md:shadow-xl rounded-xl md:rounded-2xl p-4 md:p-7 border-s-4 md:border-s-8 border-yellow-500 group hover:scale-[1.01] md:hover:scale-[1.015] transition-transform">
+              <div class="flex-shrink-0 mb-2 sm:mb-0">
                 <div
-                    class="bg-yellow-500 shadow-lg text-white rounded-full w-14 h-14 flex items-center justify-center text-3xl border-4 border-white group-hover:border-yellow-300">
+                    class="bg-yellow-500 shadow text-white rounded-full w-10 h-10 md:w-14 md:h-14 flex items-center justify-center text-xl md:text-3xl border-2 md:border-4 border-white group-hover:border-yellow-300">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                       class="w-8 h-8">
+                       class="w-6 h-6 md:w-8 md:h-8">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M12 10v4m0 0v4m0-4h4m-4 0H8m4-8v2m8 4h-8m-8 0h-8m6 8H4a2 2 0 01-2-2v-2a2 2 0 012-2h16a2 2 0 012 2v2a2 2 0 01-2 2H6z"/>
                   </svg>
                 </div>
               </div>
               <div class="flex-1">
-                <h2 class="text-2xl font-bold mb-2 text-yellow-700 leading-tight bg-white/80 px-2 py-1 rounded-xl shadow-sm">
+                <h2 class="text-lg md:text-2xl font-bold mb-1 md:mb-2 text-yellow-700 leading-tight bg-white/80 px-2 py-1 rounded-lg md:rounded-xl shadow-sm">
                   Zaloguj się do SOZ PZSS</h2>
-                <p class="text-gray-700 mb-1 text-lg">
-                  Wejdź na <a class="text-yellow-800 underline font-semibold" href="https://soz.pzss.org.pl"
-                              target="_blank">soz.pzss.org.pl</a>. Login to Twój e-mail, hasło domyślnie PESEL.
-                  Po zalogowaniu zmień hasło i zaakceptuj zaproszenie do klubu, by rozpocząć staż.
-                </p>
+                <p class="text-gray-700 mb-1 text-base md:text-lg">Wejdź na <a
+                    class="text-yellow-800 underline font-semibold" href="https://soz.pzss.org.pl" target="_blank">soz.pzss.org.pl</a>.
+                  Login to Twój e-mail, hasło domyślnie PESEL. Po zalogowaniu zmień hasło i zaakceptuj zaproszenie do
+                  klubu, by rozpocząć staż.</p>
               </div>
             </div>
             <!-- Step 4 -->
             <div
-                class="flex items-start space-x-4 bg-gradient-to-r from-white via-indigo-50 to-white shadow-xl rounded-2xl p-7 border-s-8 border-indigo-700 group hover:scale-[1.015] transition-transform">
-              <div class="flex-shrink-0">
+                class="flex flex-col sm:flex-row items-start gap-3 md:space-x-4 bg-gradient-to-r from-white via-indigo-50 to-white shadow-md md:shadow-xl rounded-xl md:rounded-2xl p-4 md:p-7 border-s-4 md:border-s-8 border-indigo-700 group hover:scale-[1.01] md:hover:scale-[1.015] transition-transform">
+              <div class="flex-shrink-0 mb-2 sm:mb-0">
                 <div
-                    class="bg-indigo-700 shadow-lg text-white rounded-full w-14 h-14 flex items-center justify-center text-3xl border-4 border-white group-hover:border-indigo-400">
+                    class="bg-indigo-700 shadow text-white rounded-full w-10 h-10 md:w-14 md:h-14 flex items-center justify-center text-xl md:text-3xl border-2 md:border-4 border-white group-hover:border-indigo-400">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                       class="w-8 h-8">
+                       class="w-6 h-6 md:w-8 md:h-8">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M12 12v6m0 0v6m0-6h6m-6 0H6"/>
                   </svg>
                 </div>
               </div>
               <div class="flex-1">
-                <h2 class="text-2xl font-bold mb-2 text-indigo-900 leading-tight bg-white/80 px-2 py-1 rounded-xl shadow-sm">
+                <h2 class="text-lg md:text-2xl font-bold mb-1 md:mb-2 text-indigo-900 leading-tight bg-white/80 px-2 py-1 rounded-lg md:rounded-xl shadow-sm">
                   Rozpocznij naukę i przygotowania do egzaminu</h2>
-                <ul class="list-disc list-inside ml-3 text-gray-700 text-lg space-y-2">
+                <ul class="list-disc list-inside ml-3 text-gray-700 text-base md:text-lg space-y-2">
                   <li class="flex items-center gap-2">
                     <svg width="22" height="22" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -126,9 +123,8 @@
                       <rect x="8" y="9" width="8" height="2" rx="1" fill="#2563eb"/>
                       <rect x="8" y="5" width="8" height="2" rx="1" fill="#16a34a"/>
                     </svg>
-                    <a class="text-indigo-700 underline font-semibold" href="/ustawa-o-broni.pdf" target="_blank">Ustawa o
-                      broni i amunicji (PDF)</a>
-                  </li>
+                    <a class="text-indigo-700 underline font-semibold" href="/ustawa-o-broni.pdf" target="_blank">Ustawa
+                      o broni i amunicji (PDF)</a></li>
                   <li class="flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-red-600" viewBox="0 0 20 20"
                          fill="currentColor">
@@ -137,21 +133,19 @@
                             clip-rule="evenodd"/>
                     </svg>
                     <a class="text-indigo-700 underline font-semibold" href="/wzorcowy-regulamin-strzelnic.pdf"
-                       target="_blank">Wzorcowy regulamin strzelnic (PDF)</a>
-                  </li>
+                       target="_blank">Wzorcowy regulamin strzelnic (PDF)</a></li>
                   <li class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-600" viewBox="0 0 24 24" fill="none"
-                         stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-blue-600" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor">
                       <rect width="18" height="20" x="3" y="2" rx="2" fill="#e0f2fe"/>
                       <path stroke="#2563eb" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
                             d="M8 7h8M8 11h8M8 15h8"></path>
                     </svg>
                     <a class="text-indigo-700 underline font-semibold" href="/rozporzadzenie-o-przechowywaniu.pdf"
-                       target="_blank">Rozporządzenie o przechowywaniu broni (PDF)</a>
-                  </li>
+                       target="_blank">Rozporządzenie o przechowywaniu broni (PDF)</a></li>
                   <li class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-600" viewBox="0 0 24 24" fill="none"
-                         stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-green-600" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor">
                       <circle cx="12" cy="12" r="10" stroke="#22c55e" stroke-width="2"/>
                       <path stroke="#22c55e" stroke-width="2" stroke-linecap="round" d="M8 12l2 2 4-4"/>
                     </svg>
@@ -171,8 +165,8 @@
                     </NuxtLink>
                   </li>
                   <li class="flex items-center gap-2">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-pink-600" viewBox="0 0 24 24" fill="none"
-                         stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-pink-600" viewBox="0 0 24 24"
+                         fill="none" stroke="currentColor">
                       <rect width="18" height="20" x="3" y="2" rx="2" fill="#fce7f3"/>
                       <path stroke="#db2777" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
                             d="M8 7h8M8 11h8M8 15h8"></path>
@@ -183,8 +177,7 @@
                   </li>
                   <li class="flex items-center gap-2">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-orange-600" viewBox="0 0 24 24"
-                         fill="none"
-                         stroke="currentColor">
+                         fill="none" stroke="currentColor">
                       <rect width="18" height="20" x="3" y="2" rx="2" fill="#fed7aa"/>
                       <path stroke="#ea580c" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
                             d="M8 7h8M8 11h8M8 15h8"/>
