@@ -14,7 +14,7 @@ defineProps<Props>()
   <section class="py-8 bg-white">
     <div class="container mx-auto px-6">
       <div class="max-w-4xl mx-auto">
-        <div class="flex gap-4 mb-8">
+        <div class="flex flex-col sm:flex-row gap-4 mb-8">
           <button
               @click="emit('sectionChange', 'komenda')"
               :class="[
