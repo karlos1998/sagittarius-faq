@@ -4,8 +4,8 @@
     # Enable file serving
     file_server
     
-    # SPA fallback - serve 200.html for all routes (Nuxt static generation)
-    try_files {path} /200.html
+    # SPA fallback - try file, then directory with index.html, then 200.html
+    try_files {path} {path}/index.html /200.html
     
     # Enable gzip compression
     encode gzip
@@ -18,11 +18,11 @@
         Referrer-Policy "strict-origin-when-cross-origin"
     }
     
-    # Service Worker - no cache, always fresh
-    @sw {
-        path /sw.js /workbox-*.js
-    }
+    # Service Worker - no cache, always fresh (MUST be before @static)
+    @sw path /sw.js
+    @workbox path_regexp workbox ^/workbox-.*\.js$
     header @sw Cache-Control "no-cache, no-store, must-revalidate"
+    header @workbox Cache-Control "no-cache, no-store, must-revalidate"
     
     # Manifest files
     @manifest {
@@ -39,8 +39,10 @@
     }
     header @pdf Cache-Control "public, max-age=2592000"
     
-    # Cache static assets
+    # Cache static assets (but not Service Worker files)
     @static {
+        not path /sw.js
+        not path_regexp ^/workbox-.*\.js$
         path *.css *.js *.jpg *.jpeg *.png *.gif *.ico *.svg *.woff *.woff2
     }
     header @static Cache-Control "public, max-age=31536000, immutable"

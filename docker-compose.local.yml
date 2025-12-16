@@ -1,0 +1,12 @@
+version: '3.3'
+
+services:
+  web:
+    image: caddy:2-alpine
+    container_name: sagittarius-faq-local
+    restart: unless-stopped
+    volumes:
+      - ./.output/public:/usr/share/caddy:ro
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+    ports:
+      - "3090:80"

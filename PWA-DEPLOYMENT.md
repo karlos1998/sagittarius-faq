@@ -19,14 +19,24 @@ Aplikacja została zaktualizowana z pełnym wsparciem dla Progressive Web App (P
 
 ## Wdrożenie
 
-### Automatyczne wdrożenie (zalecane):
+### Lokalne testowanie:
 
 ```bash
 # Build aplikacji
 npm run generate
 
-# Restart kontenera Docker (montuje .output/public)
-docker-compose restart
+# Test lokalny na http://localhost:3090
+docker-compose -f docker-compose.local.yml up -d
+```
+
+### Wdrożenie na produkcję:
+
+```bash
+# Build aplikacji
+npm run generate
+
+# Na serwerze produkcyjnym (z siecią nginx-proxy):
+docker-compose up -d
 ```
 
 ### Krok po kroku:
