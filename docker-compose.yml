@@ -6,7 +6,7 @@ services:
     container_name: sagittarius-faq
     restart: unless-stopped
     volumes:
-      - ./public:/usr/share/caddy:ro
+      - ./.output/public:/usr/share/caddy:ro
       - ./Caddyfile:/etc/caddy/Caddyfile:ro
     environment:
       - VIRTUAL_HOST=pomoc.kssagittarius.pl
