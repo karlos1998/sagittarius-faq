@@ -4,8 +4,8 @@
     # Enable file serving
     file_server
     
-    # SPA fallback - serve index.html for all routes
-    try_files {path} /index.html
+    # SPA fallback - serve 200.html for all routes (Nuxt static generation)
+    try_files {path} /200.html
     
     # Enable gzip compression
     encode gzip
