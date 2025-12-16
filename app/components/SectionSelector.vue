@@ -2,11 +2,11 @@
 import SectionButton from "~/components/SectionButton.vue";
 
 interface Props {
-  activeSection: 'komenda' | 'pzss' | 'materialy'
+  activeSection: 'komenda' | 'pzss' | 'materialy' | 'promesy'
 }
 
 const emit = defineEmits<{
-  sectionChange: [section: 'komenda' | 'pzss' | 'materialy']
+  sectionChange: [section: 'komenda' | 'pzss' | 'materialy' | 'promesy']
 }>()
 
 defineProps<Props>()
@@ -16,6 +16,11 @@ const sections = [
     id: 'komenda' as const,
     title: 'Komenda Wojewódzka',
     description: 'Składanie wniosków o pozwolenia na broń'
+  },
+  {
+    id: 'promesy' as const,
+    title: 'Promesy',
+    description: 'Złóż wniosek o nadanie promes'
   },
   {
     id: 'pzss' as const,
