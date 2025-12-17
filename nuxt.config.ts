@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     devServer: {
         port: 3080
     },
+    ssr: true,
     css: ['~/assets/css/main.css'],
     modules: [
         '@nuxt/eslint',
@@ -20,6 +21,25 @@ export default defineNuxtConfig({
                 driver: 'fs',
                 base: './content'
             }
+        }
+    },
+    nitro: {
+        prerender: {
+            crawlLinks: true,
+            routes: [
+                '/',
+                '/miasta/bialystok',
+                '/miasta/olsztyn',
+                '/miasta/radom',
+                '/miasta/warszawa',
+                '/promesy/radom',
+                '/jak-uzyskac-pozwolenie-na-bron-krok-po-kroku',
+                '/kompendium',
+                '/rozporzadzenie-transport',
+                '/skrocona-ustawa-o-broni-i-amunicji',
+                '/ustawa-o-broni-i-amunicji',
+                '/zasady-bezpieczenstwa'
+            ]
         }
     },
     buildModules: [
